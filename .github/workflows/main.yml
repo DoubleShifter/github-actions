@@ -1,10 +1,10 @@
 name: CI-CD-Pipeline-to-AWS-ElasticBeastalk
 env:
-  EB_PACKAGE_S3_BUCKET_NAME : "my-simple-app-bucket"
+  EB_PACKAGE_S3_BUCKET_NAME : "shit-bucket"
   EB_APPLICATION_NAME       : "my-simple-app"
   EB_ENVIRONMENT_NAME       : "Mysimpleapp-env"
   DEPLOY_PACKAGE_NAME       : "flask_app_${{ github.sha }}.zip"
-  AWS_REGION_NAME           : "eu-west-3"
+  AWS_REGION_NAME           : "us-east-2"
 
 on: 
   push:
